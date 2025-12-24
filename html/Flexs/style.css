@@ -1,0 +1,50 @@
+* {
+    font-family: sans-serif;
+    background-color: darkslategrey;
+    color: lightblue;
+}
+
+div div {
+    border: 1px white solid;
+}
+.container {
+    border: 1px white solid;
+    padding: 1rem 1rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;/*
+    justify-items: start; 
+    justify-self: ;
+    align-items: ;
+    align-content: ;
+    align-self: ; */
+}
+
+
+
+
+
+/* article div div:nth-child(2) {
+    color: red;
+} */
+/* div:nth-child(even) {
+    background-color: grey;
+    color: white;
+} */
+
+/*
+    flex-flow: ;
+    justify-content: ;
+    justify-items: ;
+    justify-self: ;
+    align-items: ;
+    align-content: ;
+    align-self: ;
+    order: ;
+    background-repeat: repeat;
+    background-attachment: scroll;
+    height: inherit;
+    height: initial;
+    position: sticky;
+    overflow: all;
+*/

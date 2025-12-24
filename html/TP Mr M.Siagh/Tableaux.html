@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-color: lightyellow;
+            text-align: center;
+        }
+        .table {
+            text-align: center;
+        }
+        .maintable {
+            border-right: 4px solid rgb(47, 47, 47);
+            border-bottom: 4px solid rgb(47, 47, 47);
+            border-top: 4px solid gray;
+            border-left: 4px solid gray;
+            text-align: center;
+        }
+        .cell {
+            width: 200px;
+            color: rgb(98, 13, 13);
+            text-align: center;
+        }
+        .ytable {
+            background-color: yellow;
+        }
+        .lytable {
+            background-color: rgb(255, 255, 162);
+        }
+        .firsttable {
+            width: 20rem;
+        }
+        .sectable td {
+            width: 5rem;
+        }
+        .seccell {
+            text-align: right;
+            vertical-align: bottom;
+        }
+        .cv {
+            text-align: left;
+            border-collapse: collapse;
+            width: 100%;
+            border: 1px solid black;
+            max-width: 38rem
+        }
+        .cv p {
+            margin: 0;
+        }
+        .cv td {
+            border-bottom: 1px solid black;
+            padding: 8px;
+            vertical-align: top;
+        }
+        .cv .td {
+            max-width: 23rem;
+        }
+    </style>
+</head>
+<body>
+    <h1>LES TABLEAU</h1>
+    <h1 class="table">TABLEAU SIMPLE</h1>
+    <table border="1">
+        <tr>
+            <td>Cellule 1</td>
+            <td class="cell">Cellule 2</td>
+        </tr>
+        <tr>
+            <td rowspan="3" style="color: rgb(98, 13, 13); height: 7rem;">Cellule 3</td>
+            <td class="cell seccell">Cellule 4</td>
+        </tr>
+    </table>
+    <h1 class="table">TABLEAU COMPLEXES</h1>
+    <table border="1">
+        <tr>
+            <td>Cellule 1</td>
+            <td>Cellule 2</td>
+            <td>Cellule 3</td>
+            <td>Cellule 4</td>
+        </tr>
+        <tr>
+            <td colspan="4">Cellule fusionnee sur 4 colennes</td>
+        </tr>
+        <tr>
+            <td>Cellule 6</td>
+            <td>Cellule 7</td>
+            <td>Cellule 8</td>
+            <td>Cellule 9</td>
+        </tr>
+    </table>
+    <hr>
+    <table class="maintable firsttable" border="1">
+        <tr>
+            <td style="background-color: yellow;"> Cellule 1</td>
+            <td style="background-color: blue;">Cellule 2</td>
+            <td style="background-color: black; color: white" rowspan="2">Fusion de 2 lignes</td>
+        </tr>
+        <tr>
+            <td style="background-color: gray;">Cellule 3</td>
+            <td style="background-color: red;">Cellule 4</td>
+        </tr>
+    </table>
+    <br>
+    <table class="maintable sectable" border="1">
+        <tr class="ytable">
+            <td colspan="4">Titre 1</td>
+        </tr>
+        <tr class="ytable">
+            <td>Cellule 1</td>
+            <td>Cellule 2</td>
+            <td>Cellule 3</td>
+            <td>Cellule 4</td>
+        </tr>
+        <tr class="ytable">
+            <td colspan="4">Titre 2</td>
+        </tr>
+        <tr class="lytable">
+            <td>Cellule 5</td>
+            <td rowspan="2" colspan="2">Cellule 6</td>
+            <td>Cellule 7</td>
+        </tr>
+        <tr class="lytable">
+            <td>Cellule 8</td>
+            <td>Cellule 9</td>
+        </tr>
+    </table>
+    <br>
+    <table class="cv">
+        <tr>
+            <td>
+                <p>Prenom</p>
+                <p>Nom</p>
+                <p>Adresse</p>
+                <p>Date de Naissance</p>
+                <br>
+                <b>Formation</b>
+            </td>
+            <td colspan="4">
+                <img src="id.jpg" alt="la photo de l'eleve" width="150">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <ul>
+                    <li>2001-2002</li>
+                    <li>2000-2001</li>
+                </ul>
+                <br>
+                <b>Experience professionnelle</b>
+            </td>
+            <td class="td">Liste a un item dans un tableau 2 colonnes et X ligne pour chaque ligne on a l'annee correspondante</td>
+        </tr>
+        <tr>
+            <td>
+                <ul>
+                    <li>2001-2002</li>
+                    <li>2000-2001</li>
+                </ul>
+                <br>
+                <b>Competences</b>
+            </td>
+            <td class="td">Liste a un item dans un tableau 2 colonnes et X ligne pour chaque ligne on a l'annee correspondante</td>
+        </tr>
+        <tr>
+            <td>
+                <ul>
+                    <li>2001-2002</li>
+                    <li>2000-2001</li>
+                </ul>
+                <br>
+                <b>Informations complementaires</b>
+            </td>
+            <td class="td">Liste a un item dans un tableau 2 colonnes et X ligne pour chaque ligne on a l'annee correspondante</td>
+        </tr>
+        <tr>
+            <td>
+                <ul>
+                    <li>2001-2002</li>
+                    <li>2000-2001</li>
+                </ul>
+            </td>
+            <td class="td">Liste a un item dans un tableau 2 colonnes et X ligne pour chaque ligne on a l'annee correspondante</td>
+        </tr>
+    </table>
+</body>
+</html>

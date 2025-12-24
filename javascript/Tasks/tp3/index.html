@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    table, th, td {
+      border: 1px solid black;
+    }
+  </style>
+</head>
+<body>
+  <h1>Header</h1>
+  <h3>Content</h3>
+  <input id="Taille" type="number">
+  <input id="Poids" type="number">
+  <input id="Button" type="button" value="Button">
+  <script>
+    const button = document.getElementById('Button');
+    button.addEventListener('click', () => {
+      const taille = document.getElementById('Taille').value / 100;
+      const poids = document.getElementById('Poids').value;
+      const getMass = (poids / (taille * taille)).toFixed(1)
+      const message = () => {
+        switch (true) {
+          case getMass < 18.5:
+            return ["vous etes un petit peu maigre", "red"];
+          break
+          case getMass >= 18.5 && getMass < 25:
+            return ["Bravo, votre poids est idéal", "green"];
+          break
+          case getMass >= 25 && getMass < 30:
+            return ["vous etes en surpoids", "orange"];
+          break
+          case getMass >= 30:
+          return ["vous êtes en obésité", "red"];
+        }
+      }
+      const h3Element = document.createElement('h3').innerHTML = "Votre IMC = " + getMass + " " + message()[0];
+      h3Element.style.color = message()[1];
+      document.body.appendChild(h3Element);
+    });
+  </script>
+</body>
+</html>

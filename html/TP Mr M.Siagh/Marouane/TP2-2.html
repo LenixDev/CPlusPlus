@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TP2</title>
+    <style>
+        progress {
+            border-radius: 1px;
+        }
+        progress::-webkit-progress-bar {
+            background-image: linear-gradient(to bottom, #d6d4d4, #c5c5c5, #d6d4d4);
+            border: 2px solid #b6b6b675;
+        }
+        progress::-webkit-progress-value {
+            background-image: linear-gradient(to bottom, #dbdbdb,#73f75f,#38e022 ,#3fff25, #70ec60);
+        }
+    </style>
+</head>
+<body>
+    <header></header>
+    <main>
+        <section>
+            <h1>Menu</h1>
+            <ul>
+                <li><a href="#image">Vers au Images section</a></li>
+                <li><a href="#lol">Vers au Lol Cats section</a></li>
+                <li><a href="#lien">Vers au Liens section</a></li>
+            </ul>
+            <article>
+                <h1 id="image">Images</h1>
+                <p><img src="image1.jpg" alt="Une image de paysage (Bienvenue)"></p>
+                <img src="repertoire personnel/formation.jpg" alt="">
+            </article>
+            <article>
+                <h1 id="lol">LOLcats</h1>
+                <p>
+                    <audio controls>
+                        <source src="chat.wav" type="audio/wav">
+                    </audio>
+                    <video width="320" height="240" autoplay>
+                        <source src="chat.ogv" type="video/ogg">
+                    </video>
+
+                    <label for="file"><b><i>Apparence:</i></b></label>
+                    <progress id="file" value="45" max="100"></progress>
+                </p>
+            </article>
+            <article>
+                <h1 id="lien">Liens</h1>
+                <a href="https://www.google.com" target="_blank">Google</a>
+                <a href="mailto:siaghmarouane54@gmail.com">Me Contacter</a>
+            </article>
+            <article>
+                <h2>Adressage relatif</h2>
+                <p>Libelle du lien</p>
+                <a href="TP2-1.html">TP 1</a>
+                <a href="TP2-2.html">TP 2-1</a>
+            </article>
+            <article>
+                <h2>Image</h2>
+                <p><a href="https://openclassrooms.com/fr/courses/1603881-creez-votre-site-web-avec-html5-et-css3" target="_blank"><img src="html_strong.jpg" alt=""></a></p>
+            </article>
+            <article>
+                <h1>exo5</h1>
+                <ul>
+                    <li>
+                        <ul>
+                            <li><a href="TP2-1.html#titre">Titre</a></li>
+                            <li><a href="TP2-1.html#plusdutext"></a></li>
+                        </ul>
+                    </li>
+                </ul>
+                <br>
+                <p>REMPLISSAGE</p>
+                <hr>
+            </article>
+        </section>
+    </main>
+    <footer><a href="#">Vers le haut de la page</a></footer>
+</body>
+</html>
