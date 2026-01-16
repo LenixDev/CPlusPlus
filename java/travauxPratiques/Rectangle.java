@@ -6,14 +6,8 @@ class Rectangle extends Forme {
     this.largeur = largeur;
   }
 
-  public double calculerAire() {
-    return longueur * largeur;
-  }
-  public double calculerPerimetre() {
-    return 2 * (longueur + largeur);
-  }
+  public double calculerAire() { return longueur * largeur; }
+  public double calculerPerimetre() { return 2 * (longueur + largeur); }
 
-  public boolean estCarre() {
-    return longueur == largeur;
-  }
+  public boolean estCarre() { return longueur == largeur; }
 }

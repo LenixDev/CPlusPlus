@@ -12,7 +12,7 @@ abstract class Forme {
   public abstract double calculerPerimetre();
 
   public void afficherInfo() {
-    System.out.println("le couleur: " + this.couleur);
+    System.out.println("la couleur: " + this.couleur);
     System.out.println("le x: " + this.x);
     System.out.println("le y: " + this.y);
     System.out.println("l'aire: " + this.calculerAire());
@@ -22,6 +22,7 @@ abstract class Forme {
   public void deplacer(double newX, double newY) {
     this.x = newX;
     this.y = newY;
+    System.out.println("Déplacé vers (" + newX + ", " + newY + ")");
   }
   
   public String getCouleur() { return this.couleur; }

@@ -7,13 +7,9 @@ class Cercle extends Forme {
     this.rayon = rayon;
   }
 
-  public double calculerAire() {
-    return PI * (rayon * rayon);
-  }
+  public double calculerAire() { return PI * (rayon * rayon);}
 
-  public double calculerPerimetre() {
-    return 2 * PI * rayon;
-  }
+  public double calculerPerimetre() { return 2 * PI * rayon; }
 
   public double getDiametre() { return 2 * rayon; }
 }

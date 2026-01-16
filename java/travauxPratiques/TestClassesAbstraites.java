@@ -13,6 +13,6 @@ class TestClassesAbstraites {
     if (rectangle instanceof Rectangle) {
       Rectangle newRectangle = (Rectangle) rectangle;
       System.out.println("est carre: " + newRectangle.estCarre());
-    };
+    }
 	}
 }
